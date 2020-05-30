@@ -1,0 +1,33 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-surround'
+
+call plug#end()
+
+set number
+set nocompatible
+
+syntax enable
+filetype plugin on
+
+set path+=**
+
+set wildmenu
+
+set tabstop=4
+set shiftwidth=4
+
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
+
+noremap<F8> :tabp<CR>
+noremap<F9> :tabn<CR>
+noremap<F12> :w !sh<CR>
+
+inoremap ( () <ESC>h
+inoremap { {} <ESC>h
+inoremap [ [] <ESC>h
+inoremap " "" <ESC>h
+
